@@ -1,7 +1,16 @@
+import axios from "axios";
 import MovieCard from "components/MovieCard";
 import Pagination from "components/pagination";
+import { BASE_URL } from "utils/request";
 
 function Listing() {
+
+  //Forma incorreta
+  axios.get(`${BASE_URL}/movies?size=10&page=0`)
+  .then( response =>{
+    console.log(response.data);
+  });
+
   return (
     //fragment -> simula uma div não interfere em nada
     <>
