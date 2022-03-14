@@ -7,7 +7,7 @@ function Navbar() {
       <nav className="container">
         <div className="dsmovie-nav-content">
           <h1>DSMovie</h1>
-          <a href="https://github.com/Milton-668">
+          <a href="https://github.com/Milton-668/dsmovie">
             <div className="dsmovie-contact-container">
               <GithubIcon />
               <p className="dsmovie-contact-link">/Milton Jr</p>
