@@ -1,8 +1,17 @@
 package com.devsuperior.dsmovie.entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "tb_user")
 public class User {
     @Id
@@ -10,27 +19,4 @@ public class User {
     private Long id;
     private String email;
 
-    public User() {
-    }
-
-    public User(Long id, String email) {
-        this.id = id;
-        this.email = email;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 }
